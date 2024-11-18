@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Bakım Kaydı Ekle</title>
+    <link rel="stylesheet" href="stylesBakimEkle.css">
+</head>
+<body>
+    <header>
+        <h1>Yeni Bakım Kaydı Ekle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="bakimEkle.html">Yeni Bakım Kaydı Ekle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="yeniBakim">
+            <h2>Bakım Kaydı Bilgileri</h2>
+            <form id="bakimForm">
+                <label for="bakimTarihi">Bakım Tarihi:</label>
+                <input type="date" id="bakimTarihi" name="bakimTarihi" required>
+
+                <label for="ekipman">Ekipman:</label>
+                <input type="text" id="ekipman" name="ekipman" required>
+
+                <label for="bakimDetaylari">Bakım Detayları:</label>
+                <textarea id="bakimDetaylari" name="bakimDetaylari" required></textarea>
+
+                <button type="submit">Kaydet</button>
+            </form>
+            <h2>Mevcut Bakım Kayıtları</h2>
+            <ul id="bakimListesi">
+                <!-- Bakım kayıtları burada listelenecek -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="bakimEkle.js"></script>
+</body>
+</html>

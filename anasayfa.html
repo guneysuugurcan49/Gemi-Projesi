@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemi Denetim Yazılımı</title>
+    <link rel="stylesheet" href="stylesAnasayfa.css">
+</head>
+<body>
+    <header>
+        <h1>Gemi Denetim Yazılımı</h1>
+        <nav>
+            <ul>
+                <li><a href="#denetimler">Denetimler</a></li>
+                <li><a href="#bakim">Bakım Kayıtları</a></li>
+                <li><a href="#ekipman">Ekipmanlar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="denetimler">
+            <h2>Denetimler</h2>
+            <li><a href="denetimEkle.html">Yeni Denetim Ekle</a></li> <!-- Yeni ekipman ekle butonu -->
+            <button id="denetimGuncelle"><a href="denetimGuncelle.html">Denetim Güncelle</a></button>
+            <button id="denetimSil"><a href="denetimSil.html">Denetim Sil</a></button>
+            <button id="denetimListele"><a href="denetimListele.html">Denetimleri Listele</a></button>
+            <ul id="denetimListesi">
+                <!-- Denetim öğeleri burada listelenecek -->
+            </ul>
+        </section>
+        <section id="bakim">
+            <h2>Bakım Kayıtları</h2>
+            <li><a href="bakimEkle.html">Yeni Bakım Ekle</a></li> <!-- Yeni Bakım ekle butonu -->
+            <button id="bakimListele"><a href="bakimListele.html">Bakımları Listele</a></button>
+            <button id="bakimGuncelle"><a href="bakimGuncelle.html">Bakım Güncelle</a></button>
+            <ul id="bakimListesi">
+                <!-- Bakım kayıtları burada listelenecek -->
+            </ul>
+        </section>
+        <section id="ekipman">
+            <h2>Ekipmanlar</h2>
+            <button id="yeniEkipman">Yeni Ekipman Ekle</button>
+            <ul id="ekipmanListesi">
+                <!-- Ekipmanlar burada listelenecek -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="anasayfa.js"></script>
+</body>
+</html>
+

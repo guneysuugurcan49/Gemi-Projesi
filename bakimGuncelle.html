@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakım Kaydını Güncelle</title>
+    <link rel="stylesheet" href="stylesBakimGuncelle.css">
+</head>
+<body>
+    <header>
+        <h1>Bakım Kaydını Güncelle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="bakimListele.html">Bakım Kayıtları</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="bakimGuncelle">
+            <h2>Bakım Güncelleme Bilgileri</h2>
+            <form id="guncelleForm">
+                <label for="bakimId">Bakım ID:</label>
+                <input type="text" id="bakimId" name="bakimId" required>
+
+                <label for="bakimTarihi">Bakım Tarihi:</label>
+                <input type="date" id="bakimTarihi" name="bakimTarihi" required>
+
+                <label for="ekipman">Ekipman:</label>
+                <input type="text" id="ekipman" name="ekipman" required>
+
+                <label for="bakimDetaylari">Bakım Detayları:</label>
+                <textarea id="bakimDetaylari" name="bakimDetaylari" required></textarea>
+
+                <button type="submit">Güncelle</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="bakimGuncelle.js"></script>
+</body>
+</html>

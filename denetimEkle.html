@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Denetim Ekle</title>
+    <link rel="stylesheet" href="stylesDenetimEkle.css">
+</head>
+<body>
+    <header>
+        <h1>Yeni Denetim Ekle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="denetimEkle.html">Yeni Denetim Ekle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="yeniDenetim">
+            <h2>Denetim Bilgileri</h2>
+            <form id="denetimForm">
+                <label for="denetimTarihi">Denetim Tarihi:</label>
+                <input type="date" id="denetimTarihi" name="denetimTarihi" required>
+
+                <label for="ekipman">Ekipman:</label>
+                <input type="text" id="ekipman" name="ekipman" required>
+
+                <label for="bulgular">Bulgular:</label>
+                <textarea id="bulgular" name="bulgular" required></textarea>
+
+                <button type="submit">Kaydet</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="denetimEkle.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denetim Güncelle</title>
+    <link rel="stylesheet" href="stylesDenetimGuncelle.css">
+</head>
+<body>
+    <header>
+        <h1>Denetim Güncelle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="denetimGuncelle.html">Denetim Güncelle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="denetimGuncelle">
+            <h2>Denetim Güncelleme Bilgileri</h2>
+            <form id="guncelleForm">
+                <label for="denetimId">Denetim ID:</label>
+                <input type="text" id="denetimId" name="denetimId" required>
+
+                <label for="denetimTarihi">Denetim Tarihi:</label>
+                <input type="date" id="denetimTarihi" name="denetimTarihi" required>
+
+                <label for="ekipman">Ekipman:</label>
+                <input type="text" id="ekipman" name="ekipman" required>
+
+                <label for="bulgular">Bulgular:</label>
+                <textarea id="bulgular" name="bulgular" required></textarea>
+
+                <button type="submit">Güncelle</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="denetimGuncelle.js"></script>
+</body>
+</html>
