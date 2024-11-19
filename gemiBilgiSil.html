@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemi Bilgilerini Sil</title>
+    <link rel="stylesheet" href="stylesGemiBilgiSil.css">
+</head>
+<body>
+    <header>
+        <h1>Gemi Bilgilerini Sil</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="gemiBilgiListele.html">Gemi Bilgileri Listesi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gemiSil">
+            <h2>Gemi Silme Bilgileri</h2>
+            <form id="silForm">
+                <label for="gemiId">Gemi ID:</label>
+                <input type="text" id="gemiId" name="gemiId" required>
+                <button type="submit">Sil</button>
+            </form>
+            <h2>Mevcut Gemiler</h2>
+            <ul id="gemiListesi">
+                <!-- Gemi bilgileri burada listelenecek -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="gemiBilgiSil.js"></script>
+</body>
+</html>

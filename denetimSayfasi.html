@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denetim Sayfası</title>
+    <link rel="stylesheet" href="stylesDenetimSayfası.css">
+</head>
+<body>
+    <header>
+        <h1>Denetim Sayfası</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="gemiBilgiListele.html">Gemi Bilgileri Listesi</a></li>
+                <li><a href="denetimSayfasi.html">Denetim Sayfası</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="denetimForm">
+            <h2>Denetim Kaydı</h2>
+            <form id="form">
+                <label for="gemiId">Gemi ID:</label>
+                <input type="text" id="gemiId" name="gemiId" required>
+
+                <label for="denetimTarihi">Denetim Tarihi:</label>
+                <input type="date" id="denetimTarihi" name="denetimTarihi" required>
+
+                <label for="denetimTuru">Denetim Türü:</label>
+                <select id="denetimTuru" name="denetimTuru" required>
+                    <option value="">Denetim Türü Seçin</option>
+                    <option value="Yangın">Yangın</option>
+                    <option value="Kurtarma">Kurtarma</option>
+                    <option value="Navigasyon">Navigasyon</option>
+                </select>
+
+                <label for="denetimDetaylari">Denetim Detayları:</label>
+                <textarea id="denetimDetaylari" name="denetimDetaylari" required></textarea>
+
+                <button type="submit">Kaydet</button>
+            </form>
+        </section>
+        <section id="denetimListesi">
+            <h2>Mevcut Denetimler</h2>
+            <ul id="liste">
+                <!-- Denetim kayıtları burada listelenecek -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="denetimSayfası.js"></script>
+</body>
+</html>

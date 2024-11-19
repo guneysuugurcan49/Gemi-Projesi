@@ -21,7 +21,13 @@ nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
+nav ul li .special-button { 
+    background-color: black; /* Özel butonun arka plan rengini siyah yapar */ 
+    color: white; /* Metin rengini beyaz yapar */ 
+} 
+nav ul li .special-button:hover { background-color: #333; /* Üzerine gelindiğinde arka plan rengini koyu gri yapar */ 
+    color: yellow; /* Üzerine gelindiğinde metin rengini sarı yapar */ 
+}
 nav ul li a {
     color: white;
     text-decoration: none;

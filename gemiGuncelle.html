@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemi Bilgilerini Güncelle</title>
+    <link rel="stylesheet" href="stylesGemiGuncelle.css">
+</head>
+<body>
+    <header>
+        <h1>Gemi Bilgilerini Güncelle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="gemiBilgiListele.html">Gemi Bilgileri Listesi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gemiGuncelle">
+            <h2>Gemi Güncelleme Bilgileri</h2>
+            <form id="guncelleForm">
+                <label for="gemiId">Gemi ID:</label>
+                <input type="text" id="gemiId" name="gemiId" required>
+
+                <label for="imoNumarasi">IMO Numarası:</label>
+                <input type="text" id="imoNumarasi" name="imoNumarasi" required>
+
+                <label for="bayrakDevleti">Bayrak Devleti:</label>
+                <input type="text" id="bayrakDevleti" name="bayrakDevleti" required>
+
+                <label for="sahipBilgileri">Sahip Bilgileri:</label>
+                <input type="text" id="sahipBilgileri" name="sahipBilgileri" required>
+
+                <label for="gemiTipi">Gemi Tipi:</label>
+                <input type="text" id="gemiTipi" name="gemiTipi" required>
+
+                <button type="submit">Güncelle</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="gemiGuncelle.js"></script>
+</body>
+</html>
