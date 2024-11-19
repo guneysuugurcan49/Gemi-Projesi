@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekipman Güncelle</title>
+    <link rel="stylesheet" href="stylesEkipmanGuncelle.css">
+</head>
+<body>
+    <header>
+        <h1>Ekipman Güncelle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="ekipmanListele.html">Ekipman Listesi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ekipmanGuncelle">
+            <h2>Ekipman Güncelleme Bilgileri</h2>
+            <form id="guncelleForm">
+                <label for="ekipmanId">Ekipman ID:</label>
+                <input type="text" id="ekipmanId" name="ekipmanId" required>
+
+                <label for="ekipmanAdi">Ekipman Adı:</label>
+                <input type="text" id="ekipmanAdi" name="ekipmanAdi" required>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="seriNumarasi">Seri Numarası:</label>
+                <input type="text" id="seriNumarasi" name="seriNumarasi" required>
+
+                <label for="uretimTarihi">Üretim Tarihi:</label>
+                <input type="date" id="uretimTarihi" name="uretimTarihi" required>
+
+                <label for="aciklama">Açıklama:</label>
+                <textarea id="aciklama" name="aciklama" required></textarea>
+
+                <button type="submit">Güncelle</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="ekipmanGUncelle.js"></script>
+</body>
+</html>

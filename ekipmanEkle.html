@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Ekipman Ekle</title>
+    <link rel="stylesheet" href="stylesEkipmanEkle.css">
+</head>
+<body>
+    <header>
+        <h1>Yeni Ekipman Ekle</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="ekipmanListele.html">Ekipman Listesi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="yeniEkipman">
+            <h2>Ekipman Bilgileri</h2>
+            <form id="ekipmanForm">
+                <label for="ekipmanAdi">Ekipman Adı:</label>
+                <input type="text" id="ekipmanAdi" name="ekipmanAdi" required>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="seriNumarasi">Seri Numarası:</label>
+                <input type="text" id="seriNumarasi" name="seriNumarasi" required>
+
+                <label for="uretimTarihi">Üretim Tarihi:</label>
+                <input type="date" id="uretimTarihi" name="uretimTarihi" required>
+
+                <label for="aciklama">Açıklama:</label>
+                <textarea id="aciklama" name="aciklama" required></textarea>
+
+                <button type="submit">Kaydet</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="ekipmanEkle.js"></script>
+</body>
+</html>

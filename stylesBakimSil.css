@@ -35,16 +35,30 @@ section {
     margin-bottom: 2em;
 }
 
-#bakimListesi {
-    list-style: none;
-    padding: 0;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-#bakimListesi li {
-    background-color: #f1f1f1;
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea, form button {
     margin-top: 0.5em;
     padding: 0.5em;
-    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+form button:hover {
+    background-color: #0033aa;
 }
 
 footer {
@@ -56,6 +70,18 @@ footer {
     bottom: 0;
 }
 
+
+#bakimListesi, #denetimListesi {
+    list-style: none;
+    padding: 0;
+}
+
+#bakimListesi li, #denetimListesi li {
+    background-color: #f1f1f1;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
 
 button {
     background-color: #0044cc;

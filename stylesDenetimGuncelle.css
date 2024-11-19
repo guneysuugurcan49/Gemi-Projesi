@@ -60,12 +60,12 @@ form button {
 form button:hover {
     background-color: #0033aa;
 }
-
 footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    width: 100%;
+    background-color: #f1f1f1; 
+    text-align: center; padding: 0.5em; /* Daha küçük padding */
+    font-size: 0.8em; /* Daha küçük font boyutu */
+    position: fixed; 
+    width: 100%; 
     bottom: 0;
 }
+

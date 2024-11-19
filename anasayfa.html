@@ -9,18 +9,11 @@
 <body>
     <header>
         <h1>Gemi Denetim Yazılımı</h1>
-        <nav>
-            <ul>
-                <li><a href="#denetimler">Denetimler</a></li>
-                <li><a href="#bakim">Bakım Kayıtları</a></li>
-                <li><a href="#ekipman">Ekipmanlar</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section id="denetimler">
             <h2>Denetimler</h2>
-            <li><a href="denetimEkle.html">Yeni Denetim Ekle</a></li> <!-- Yeni ekipman ekle butonu -->
+            <button id="denetimEkle"><a href="denetimEkle.html">Denetim Ekle</a></button>
             <button id="denetimGuncelle"><a href="denetimGuncelle.html">Denetim Güncelle</a></button>
             <button id="denetimSil"><a href="denetimSil.html">Denetim Sil</a></button>
             <button id="denetimListele"><a href="denetimListele.html">Denetimleri Listele</a></button>
@@ -28,27 +21,32 @@
                 <!-- Denetim öğeleri burada listelenecek -->
             </ul>
         </section>
-        <section id="bakim">
-            <h2>Bakım Kayıtları</h2>
-            <li><a href="bakimEkle.html">Yeni Bakım Ekle</a></li> <!-- Yeni Bakım ekle butonu -->
-            <button id="bakimListele"><a href="bakimListele.html">Bakımları Listele</a></button>
-            <button id="bakimGuncelle"><a href="bakimGuncelle.html">Bakım Güncelle</a></button>
-            <ul id="bakimListesi">
-                <!-- Bakım kayıtları burada listelenecek -->
-            </ul>
-        </section>
+        
         <section id="ekipman">
             <h2>Ekipmanlar</h2>
-            <button id="yeniEkipman">Yeni Ekipman Ekle</button>
+            <button id="ekipmanEkle"><a href="ekipmanEkle.html">Ekipman Ekle</a></button>
+            <button id="ekipmanGuncelle"><a href="ekipmanGuncelle.html">Ekipman  Güncelle</a></button>
+            <button id="ekipmanSil"><a href="ekipmanSil.html">Ekipman Sil</a></button>
+            <button id="ekipmanListesi"><a href="ekipmanListele.html">Ekipmanları Listele</a></button>
             <ul id="ekipmanListesi">
                 <!-- Ekipmanlar burada listelenecek -->
             </ul>
         </section>
+        <section id="bakim">
+            <h2>Bakım Kayıtları</h2>
+            <button id="bakimEkle"><a href="bakimEkle.html">Bakım Ekle</a></button>
+            <button id="bakimGuncelle"><a href="bakimGuncelle.html">Bakım Güncelle</a></button>
+            <button id="bakimSil"><a href="bakimSil.html">Bakım Sil</a></button>
+            <button id="bakimListele"><a href="bakimListele.html">Bakımları Listele</a></button>
+            <ul id="bakimListesi">
+                <!-- Bakım kayıtları burada listelenecek -->
+            </ul>
+        </section>
     </main>
+    <script src="anasayfa.js"></script>
     <footer>
         <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
     </footer>
-    <script src="anasayfa.js"></script>
 </body>
 </html>
 
