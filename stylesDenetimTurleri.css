@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #0044cc; /* Üst barın arka plan rengini mavi yapar */
+    background-color: #0044cc;
     color: white;
     padding: 1em;
     text-align: center;
@@ -30,14 +30,14 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em 1em;
-    background-color: #0066ff; /* Arka plan rengini mavi yapar */
+    background-color: #0066ff;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Renk geçişi efekti ekler */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #0055cc; /* Üzerine gelindiğinde arka plan rengini koyu mavi yapar */
-    color: yellow; /* Üzerine gelindiğinde metin rengini sarı yapar */
+    background-color: #0055cc;
+    color: yellow;
 }
 
 main {
@@ -64,23 +64,23 @@ form input, form select, form textarea, form button {
 }
 
 form button {
-    background-color: black; /* Butonun arka plan rengini siyah yapar */
-    color: white; /* Metin rengini beyaz yapar */
-    border: 2px solid #0044cc; /* Sınır rengi ekler */
+    background-color: black;
+    color: white;
+    border: 2px solid #0044cc;
     cursor: pointer;
     margin-top: 1em;
 }
 
 form button:hover {
-    background-color: #333; /* Üzerine gelindiğinde butonun arka plan rengini koyu gri yapar */
+    background-color: #333;
 }
 
-#liste {
+#denetimListesi {
     list-style: none;
     padding: 0;
 }
 
-#liste li {
+#denetimListesi li {
     background-color: #f1f1f1;
     margin-top: 0.5em;
     padding: 0.5em;

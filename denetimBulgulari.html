@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denetim Sayfası</title>
-    <link rel="stylesheet" href="stylesDenetimSayfası.css">
+    <title>Denetim Bulguları</title>
+    <link rel="stylesheet" href="stylesDEnetimBulguları.css">
 </head>
 <body>
     <header>
-        <h1>Denetim Sayfası</h1>
+        <h1>Denetim Bulguları</h1>
         <nav>
             <ul>
                 <li><a href="anasayfa.html">Ana Sayfa</a></li>
                 <li><a href="gemiBilgiListele.html">Gemi Bilgileri Listesi</a></li>
-                <li><a href="denetimSayfasi.html">Denetim Sayfası</a></li>
+                <li><a href="denetimTurleri.html">Denetim Türleri</a></li>
+                <li><a href="denetimBulgulari.html">Denetim Bulguları</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="denetimForm">
-            <h2>Denetim Kaydı</h2>
+        <section id="denetimBulguForm">
+            <h2>Denetim Bulgu Kaydı</h2>
             <form id="form">
                 <label for="gemiId">Gemi ID:</label>
                 <input type="text" id="gemiId" name="gemiId" required>
@@ -35,22 +36,29 @@
                     <option value="Bakım">Bakım</option>
                 </select>
 
-                <label for="denetimDetaylari">Denetim Detayları:</label>
-                <textarea id="denetimDetaylari" name="denetimDetaylari" required></textarea>
+                <label for="bulguDetaylari">Bulgu Detayları:</label>
+                <textarea id="bulguDetaylari" name="bulguDetaylari" required></textarea>
+
+                <label for="bulguCiddiyeti">Bulgu Ciddiyeti:</label>
+                <select id="bulguCiddiyeti" name="bulguCiddiyeti" required>
+                    <option value="">Bulgu Ciddiyeti Seçin</option>
+                    <option value="Major">Major</option>
+                    <option value="Minor">Minor</option>
+                </select>
 
                 <button type="submit">Kaydet</button>
             </form>
         </section>
-        <section id="denetimListesi">
-            <h2>Mevcut Denetimler</h2>
+        <section id="bulguListesi">
+            <h2>Mevcut Bulgular</h2>
             <ul id="liste">
-                <!-- Denetim kayıtları burada listelenecek -->
+                <!-- Bulgu kayıtları burada listelenecek -->
             </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Gemi Denetim Yazılımı. Tüm hakları saklıdır.</p>
     </footer>
-    <script src="denetimSayfasi.js"></script>
+    <script src="denetimBulgulari.js"></script>
 </body>
 </html>
